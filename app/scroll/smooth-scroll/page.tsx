@@ -1,11 +1,21 @@
+'use client'
+import LocomotiveScroll from 'locomotive-scroll';
+// import LocomotiveScroll from 'locomotive-scroll'
+import { useEffect } from 'react'
 import React from 'react'
+import Intro from './(components)/Intro';
 
-const page = () => {
+const Page = () => {
+
+    useEffect(() => {
+        const locomotiveScroll = new LocomotiveScroll();
+    }, [])
+    
     return (
-        <div>
-            Homepage
-        </div>
+        <main className='flex flex-col gap-10'>
+            <Intro />
+        </main>
     )
 }
 
-export default page
+export default Page;

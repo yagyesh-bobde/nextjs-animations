@@ -57,7 +57,7 @@ const Page = () => {
     return (
         <main className="main h-full w-full">
 
-            <div className="spacer h-screen w-screen"></div>
+            <div className="spacer h-screen w-screen grid place-content-center text-5xl font-bold text-center">Welcome To<br/>Smooth Prallax Scroll</div>
 
             <div ref={container} className="gallery relative h-[175vh] w-full bg-[rgb(45,45,45)] flex gap-[2vw] p-[2vw] box-border overflow-hidden">
                 <Column images={[Images[0], Images[1], Images[2]]} y={y1} top={"-15%"} />
